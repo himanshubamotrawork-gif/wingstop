@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DoorDash – $500 GIFTCARD</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6DRTCQ7GR8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6DRTCQ7GR8', { debug_mode: true });
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #f3f4f2;
+  font-family: 'Barlow', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px 60px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 460px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Header - Wingstop Green */
+.header {
+  background: #0f5e2b;
+  padding: 28px 24px 24px;
+  text-align: center;
+}
+
+.header .brand-sub {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.header .logo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Body */
+.body {
+  padding: 28px 24px 32px;
+}
+
+.prize {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.prize h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #0f5e2b;
+  line-height: 1.1;
+}
+
+.prize .subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0f5e2b;
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+/* Steps */
+.steps {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.steps li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+}
+
+.step-num {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #0f5e2b;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps li span {
+  font-size: 15px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* CTA */
+.cta-btn {
+  display: block;
+  width: 100%;
+  background: #0f5e2b;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 12px;
+}
+
+.cta-btn:hover {
+  background: #0b4721;
+}
+
+.cta-note {
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Availability */
+.avail-box {
+  border: 1.5px solid #d9e4dc;
+  border-radius: 10px;
+  padding: 18px 20px;
+  text-align: center;
+  margin: 20px 24px 0;
+}
+
+.avail-box .label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.avail-box .countries {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.flag-box {
+  background: #2a2a2a;
+  border-radius: 8px;
+  width: 52px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avail-box .fine {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* FAQ */
+.faq-card {
+  background: #fff;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 460px;
+  margin-top: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.faq-card h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f5e2b;
+  margin-bottom: 16px;
+}
+
+.faq-item {
+  border-top: 1px solid #e8eaed;
+  cursor: pointer;
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid #e8eaed;
+}
+
+.faq-q {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f5e2b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.faq-icon {
+  font-size: 22px;
+  color: #999;
+}
+
+.faq-a {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding-bottom 0.3s ease;
+  padding-bottom: 0;
+}
+
+.faq-item.open .faq-a {
+  max-height: 300px;
+  padding-bottom: 16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="header">
+    <div class="logo">WINGSTOP</div>
+  </div>
+
+  <div class="body">
+    <div class="prize">
+      <h1>Up to $500</h1>
+      <div class="subtitle">WINGSTOP DELIVERY GIFTCARD</div>
+    </div>
+
+    <ul class="steps">
+      <li><span class="step-num">1</span><span>Continue to Offer</span></li>
+      <li><span class="step-num">2</span><span>Enter basic details</span></li>
+      <li><span class="step-num">3</span><span>Complete 4–5 partner offers</span></li>
+      <li><span class="step-num">4</span><span>Get a chance to receive Giftcard</span></li>
+    </ul>
+
+    <button type="button" class="cta-btn" onclick="redirect()">Continue</button>
+
+    <p class="cta-note">Complete 4–5 partner offers to finish the review process</p>
+  </div>
+
+  <div class="avail-box">
+    <div class="label">Available to residents of:</div>
+    <div class="fine">USA · UK · Canada · Australia</div>
+  </div>
+</div>
+
+<div class="faq-card">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-q">What is this programme? <span class="faq-icon">+</span></div>
+    <div class="faq-a">This is a Product Reviewer programme where participants provide feedback on partner services for a chance to receive Wingstop Giftcard.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How do I qualify? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Enter your details and complete 4–5 partner offers. Once verified, you will be entered into the reward process.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Is this affiliated with Winstop? <span class="faq-icon">+</span></div>
+    <div class="faq-a">No. This programme is operated by a third-party rewards platform and is not affiliated with, endorsed by, or sponsored by Wingstop.</div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(function(item) {
+  item.querySelector('.faq-q').addEventListener('click', function() {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+</script>
+<script>
+  function redirect() {
+
+    gtag('event', 'cta_click', {
+      event_category: 'engagement',
+      event_label: 'Gift Card CTA',
+      value: 1,
+      event_callback: function() {
+        window.location.href = "https://glctrk.org/aff_c?offer_id=1541&aff_id=17763";
+      }
+    });
+
+    setTimeout(function() {
+      window.location.href = "https://glctrk.org/aff_c?offer_id=1541&aff_id=17763";
+    }, 100);
+  }
+</script>
+</body>
+</html>
